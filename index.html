@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"> <!-- Codificacion-->
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio de Pipe</title> 
+
+ 
+
+  <meta name="description" content="Portfolio Pipe Macias">
+
+  <!-- OPEN GRAPH-->
+
+  <meta property="og:title" content="Portfolio de pipe el ingeniero del pascual">
+  <meta property="og:description" content="Portfolio Pipe Macias🦾">
+  <meta property="og:image" content="/images/Felipe.jpg">
+  <meta property="og:image:alt" content="Una foto de Pipe Macias ">
+  
+  <link rel="alternate" href="google.com/en" hreflang="en-GB">
+  <link rel="canonical" href="google.com">
+
+  
+
+
+  
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3C2161">
+
+  <link rel="icon" type="image/jpg" href="images/maliño.jpg">
+
+  <style>
+    h1 {
+      /* color: rgba(0, 0, 0, 50%); Legacy */ 
+      /* color: rgb(0 0 0 / 70%); /* Moderno*/
+      /* color: hsl(300, 100%, 50%); */
+      /* color: oklch(75.37% 0.1691 341.84); */
+      color: #880ff0 ;
+     
+    }
+
+    body{
+      background: #dbfbff;
+    }
+    /* Clases*/
+    .link{
+      color: red;
+    }
+    /* ID*/
+    #show{
+      background: #09f;
+      color: white;
+      border: none;
+    }
+  </style>
+
+
+
+
+
+</head>
+<body>
+
+    <h1>Portfolio de Pipe Macias 🦾</h1>
+    <!--
+    <iframe width="560" height="315" src="https://www.gymplusextremo.com/"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+      clipboard-write; encrypted-media; gyroscope;
+       picture-in-picture; web-share" allowfullscreen></iframe>-->
+     
+
+    <header>
+      <!--Enlaces internos-->
+        <a class="link" href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyectos</a>  
+        <a class="link" href="#form">Form</a>
+        <!--Enlaces Externos-->
+        <a class="link" href="https://www.gymplusextremo.com/" target="_blank" rel="noreferrer"
+        >Gym Plus</a> 
+      </header>
+      
+      <dialog id="dialog">
+        <h1>¿Sabias que puedes abrir una modal asi?</h1>
+        <p>¡y es totalmente nativo!</p>
+        <button id="hide">Cerrar modal</button>
+     </dialog>  
+      <button id="show">Ver mas Informacion</button>
+
+      <script>
+         window.show.addEventListener('click', () => {
+         window.dialog.showModal()})
+
+         window.hide.addEventListener('click', () => {
+         window.dialog.close()})
+      </script>
+
+    <p>+4 años de experiencia como <strong>Ingeniero
+    de Software</strong>. Desarrollador de Dapta</p>
+    
+    <h2 id="experiencia">Experiencia</h2>
+    
+    <ul>
+        <li class="list-item">Dapta</li>
+        <li class="list-item">Google</li>
+        <li class="list-item">Amazon</li>
+        <li class="list-item">Bancolombia</li>
+    </ul>
+    
+    <a download href="/images/Felipe.jpg">
+    <img width="200"
+     id="photo-image"
+      title="Foto Pipe"
+       alt="Pipe Macias"
+        src="/images/Felipe.jpg">
+       </a>
+        <br>
+
+     <aside>
+      <header>
+        <h3>Mis tecnologias <span>Favoritas</span></h3>
+        <ol type="1" reversed start="">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+        </ol>
+      </header>
+     </aside>   
+        
+     <section>
+      <h2>Preguntas Frecuentes</h2>
+
+        <details>
+          <summary>¿Que estudios tienes?</summary>
+          <p>Estudie en el institucion universitaria pascual bravo la 
+            tecnologia en desarrollo de Software durante 3 años</p>
+        </details>
+        <details >
+          <summary>¿Que hobbies tienes?</summary>
+          <p>Me gusta mucho el deporte voy al gimnasio y de vez en cuando
+            juego futbol con unos amigos</p>
+        </details>
+        <details>
+          <summary>¿Cual es tu lenguaje favorito?</summary>
+          <p>Me encanta JavaScript, es un lenguaje con el que se pueden
+            hacer cosas muy bonitas.</p>
+        </details>
+     </section>
+
+     <section>
+        <h2 id="form">Formulario de contacto</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Informacion Personal</legend>
+            <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Pipe Macias"
+            required>
+            </div>
+            <label for="name">Email:
+              <input type="email" name="email" placeholder="Pipem@gmail.com"
+               required>
+            </label>
+
+          </fieldset>
+          <fieldset>
+            <legend>Informacion Adicional</legend>
+            <label for="tel">Telefono:
+             <input type="tel"  name="phone" placeholder="26578" required>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label for="why">¿Porque quieres contactar?</label>
+              <select name="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Mas info</option>
+              </select>
+            </div>
+            <div>
+              <label for="terms">¿Aceptas los terminos?</label>
+              <input type="checkbox" id="terms" name="terms" required>
+            </div>
+          </fieldset>
+            
+            <div>
+              <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+              </datalist>
+              <label>
+                ¿Con que lenguaje quieres que te ayude?
+                <input list="languages" name="languages">
+              </label>
+            </div>
+          <input type="submit" value="Enviar contacto">
+        </form>
+
+     </section>
+
+
+    <footer>
+      copyright © 2024 - El Portfolio Pipe M
+
+      <a href="mailto:pipemaciasmoncada5@gmail.com">Enviar correo</a>
+      <a href="tel:+573113126534">Llamar</a>
+      <a href="whatsapp://send?text=hola pipe">Escribir wpp</a>
+    </footer>
+     
+    <br>
+    <br>
+    
+
+</body>
+</html>
